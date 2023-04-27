@@ -1,0 +1,161 @@
+** start of undefined **
+
+<html>
+  <head>
+    <title>survey</title>
+     <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>  
+  <body>
+    <p id="description">Thank you for your valuable time.</p>
+    <form id="survey-form">
+    <h1 id="title">Survey Form</h1>
+
+    <label id="name-label">Name</label>
+    <input type="text" placeholder="Name" id="name" required="name"><br><br>
+
+<label id="email-label">Email</label>
+<input type="email" placeholder="Email" id="email" required="email"><br><br>
+
+<label id="number-label">Age</label>
+<input type="number" placeholder="Number" id="number"  min="18" max="99"><br><br>
+
+  <label for="selection" class="heading">Status</label>
+  <select name="status" id="dropdown">
+  <option value="single">single</option>
+  <option value="married">married</option>
+  <option value="others">others</option>
+  </select><br><br>
+
+<label class="heading">Select gender</label><br>
+<input type="radio" name="Gender" value="male">
+<label>Male</label><br>
+
+<input type="radio" name="Gender" value="female">
+<label>Female</label><br>
+<input type="radio" name="Gender" value="others">
+<label>Others</label> <br><br>
+
+<label class="heading">Hobbies</label><br>
+<input type="checkbox" value="Reading">
+<label> I like reading</label><br>
+
+<input type="checkbox" value="writting">
+<label> I like writting</label><br>
+
+<input type="checkbox" value="drawing">
+<label> I like drawing</label><br><br>
+
+<label class="heading">Describe yourself</label><br>
+<textarea id="area" placeholder="Myself..."></textarea><br><br>
+
+<input type="submit" value="Submit" id="submit">
+
+
+    </form>
+    </body>
+</html>  
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  width: 100%;
+  height: 100vh;
+  margin: 5px solid black;
+  /*
+  background-image:url(https://thumbs.dreamstime.com/b/survey-tablet-computer-man-holding-134040615.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  */
+  background-color: 	#2F4F4F;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 1rem;
+  color:white;
+}
+
+#container {
+  background-color: black;
+  margin: 2rem 15%;
+}
+
+h1, p {
+  margin:1em auto;
+  color:white;
+  width:100%;
+  position:relative;
+  text-align: center;
+
+  
+}
+
+form {
+  width: 60vw;
+  ;
+  max-width: 550px;
+  min-width: 300px;
+  margin:0 auto;
+  padding-bottom: 2em;
+  
+}
+
+fieldset {
+  padding:2rem 0;
+  border:none;
+
+}
+
+label {
+  display:block;
+  margin: 0.5rem 0;
+  
+}
+
+input,textarea, select {
+  background-color:#203737;
+  margin:3px 0 0 0;
+  width:100%;
+  min-height:1em;
+  padding:15px;
+  border-radius:15px;
+}
+
+input, textarea {
+  
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  border:none;
+}
+
+::placeholder {
+  color:white;
+  font-weight:bold;
+}
+
+.inline{
+  width:unset;
+  margin:0 0.5rem 0 0;
+  vertical-align: center;
+}
+
+input[type="text"] {
+  margin: 0 0;
+}
+
+input[type="submit"] {
+  display:block;
+  width: 60%;
+  margin: 1em ;
+  height: 3em;
+  font-size: 1.0rem;
+  border: solid 1px white;
+  min-width: 300px;
+}
+
+#dropdown {
+  color:white;
+}
+
+** end of undefined **
+
